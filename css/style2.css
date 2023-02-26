@@ -1,0 +1,19 @@
+h2{
+	display : block;
+	background-color: red;
+
+}
+h3{
+	display: inline;
+	background: green;
+
+}
+h4{
+	width: 200px;
+	display: inline-block;
+	background: brown;
+	
+}
+h5{
+	display: none;
+}
