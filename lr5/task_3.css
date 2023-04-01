@@ -1,0 +1,113 @@
+.tiny {
+	float: left;
+  	width:200px;
+  	height:300px;
+  	border-top: 2px solid #00b159;
+  	border-bottom: 8px solid #00b159;
+  	border-right: 2px solid #00b159;
+  	border-left:2px solid #00b159;
+  	margin-right: 15px;
+}
+
+.tiny .d{
+	height:15px;
+  	font-size: 23px ;
+  	font-weight: bold;
+  	padding: 15px 0;
+  	color: white;
+  	background: #00b159;
+  	text-align: center;
+  	margin: 0;
+}
+.tiny .d1{
+	height:15px;
+  	font-size: 20px ;
+  	padding: 20px 0;
+  	color: white;
+  	background: #00b159;
+  	text-align: center;
+  	border-bottom: 8px solid darkgreen ;
+}
+.div8_1{
+	width:70px;
+  	height:21px;
+  	background: #00b159;
+  	padding:10px 15px;
+  	margin: 2px 48px;
+  	text-align: center;
+  	color: white;
+}
+.small{
+	float: left;
+  	width:200px;
+  	height:300px;
+  	border-top: 2px solid #ffa500;
+  	border-bottom: 8px solid #ffa500;
+  	border-right: 2px solid #ffa500;
+  	border-left:2px solid #ffa500;
+  	margin-right: 15px;
+}
+.div1{
+	height:15px;
+  	font-size: 20px ;
+  	padding: 20px 0;
+  	color: white;
+  	background: #ffa500;
+  	text-align: center;
+  	border-bottom: 8px solid darkgoldenrod ;
+}
+.div2{
+	height:15px;
+  	font-size: 20px ;
+  	padding: 20px 0;
+  	color: white;
+  	background: red;
+  	text-align: center;
+  	border-bottom: 8px solid darkred ;
+}
+.su1{
+	width:70px;
+  	height:21px;
+  	background: #ffa500;
+  	padding:10px 15px;
+  	margin: 2px 48px;
+  	text-align: center;
+  	color: white;
+}
+.d2{
+	height:15px;
+
+  	font-size: 23px ;
+  	font-weight: bold;
+  	padding: 15px 0;
+  	color: white;
+  	background: #ffa500;
+  	text-align: center;
+}
+.medium{
+	float: left;
+  	width:200px;
+  	height:300px;
+  	border-top: 2px solid red;
+  	border-bottom: 8px solid red;
+  	border-right: 2px solid red;
+  	border-left:2px solid red;
+}
+.d3{
+	height:15px;
+  	font-size: 23px ;
+  	font-weight: bold;
+  	padding: 15px 0;
+  	color: white;
+  	background: red;
+  	text-align: center;
+}
+.su2{
+	width:70px;
+  	height:21px;
+  	background: red;
+  	padding:10px 15px;
+  	margin: 2px 48px;
+  	text-align: center;
+  	color: white;
+}
