@@ -1,0 +1,47 @@
+.fullwrap{
+	position:absolute;
+  	width: 550px;
+  	height: 600px;
+  	border: 1px solid black;
+  	margin:0 500px ;
+}
+.header{
+	height: 60px;
+	width: 530px;
+	position:absolute;
+	left:9px;
+	top:9px;
+	border: 1px solid black;
+}
+.wrap{
+	height: 380px;
+	width: 530px;
+	position:relative;
+	top:85px;
+	left:9px;
+	border: 1px solid black;
+}
+.main{
+	height: 355px;
+	width: 300px;
+	position:absolute;
+	top:10px;
+	left: 9px;
+	border: 1px solid black;
+}
+.sidebar{
+	height: 355px;
+	width: 180px;
+	position:absolute;
+	top:10px;
+	right: 9px;
+	border: 1px solid black;
+}
+.footer{
+	height: 100px;
+	width: 530px;
+	bottom:15px;
+	left:9px;
+	position:absolute;
+	border: 1px solid black;
+}
