@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="playButton">Почати гру</button>
+
+<script>
+  document.getElementById('playButton').addEventListener('click', () => {
+    // Попросити користувача ввести суму ставки
+    const userBet = parseFloat(prompt('Введіть суму ставки:'));
+
+    if (isNaN(userBet)) {
+      alert('Будь ласка, введіть коректну суму ставки.');
+      return;
+    }
+
+    // Генерувати випадкове число від -5 до 5
+    const randomNumber = Math.floor(Math.random() * 11) - 5;
+
+    // Чекати 1 секунду перед виводом результату
+    setTimeout(() => {
+      if (randomNumber <= 0) {
+        alert(`Вам не пощастило. Ви програли свою ставку ${userBet} гривень.`);
+      } else {
+        const winnings = userBet * randomNumber;
+        alert(`Вітаємо! Ви виграли ${winnings} гривень.`);
+      }
+    }, 1000);
+  });
+</script>
+
+</body>
+</html>

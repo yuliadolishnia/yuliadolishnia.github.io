@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <input type="text" id="inputText" placeholder="Введіть фразу">
+  <button id="startButton">Почати друкувати</button>
+  <div id="output"></div>
+  <script>
+    const outputElement = document.getElementById('output');
+    const inputTextElement = document.getElementById('inputText');
+    const startButton = document.getElementById('startButton');
+    let printingInterval;
+    startButton.addEventListener('click', () => {
+      const inputText = inputTextElement.value;
+      let index = 0;
+      function printNextCharacter() {
+        if (index < inputText.length) {
+          outputElement.textContent += inputText[index];
+          index++;
+        } else {
+          clearInterval(printingInterval);
+        }
+      }
+      outputElement.textContent = '';
+      printingInterval = setInterval(printNextCharacter, 100);
+    });
+  </script>
+</body>
+</html>

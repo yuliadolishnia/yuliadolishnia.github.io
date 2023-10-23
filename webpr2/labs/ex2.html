@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #time {
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <p id="time"></p>
+    <button id="updateButton">Оновити час</button>
+
+    <script>
+        function updateTime() {
+            const timeElement = document.getElementById('time');
+            const now = new Date();
+            const timeString = now.toLocaleTimeString();
+            timeElement.textContent = `Поточний час: ${timeString}`;
+        }
+
+        document.getElementById('updateButton').addEventListener('click', updateTime);
+
+        // Оновлення часу при завантаженні сторінки
+        updateTime();
+    </script>
+</body>
+</html>

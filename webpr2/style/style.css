@@ -1,0 +1,23 @@
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+.btn{
+	display: block;
+	width: 300px;
+	height: 50px;
+	border: 2px solid #fff;
+	border-radius: 10px;
+	text-align: center;
+	line-height: 50px;
+	text-decoration: none;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	background-color: #917FB3;
+}
+.btn:hover{
+	background:#FDE2F3 ;
+	color: #000;
+}
