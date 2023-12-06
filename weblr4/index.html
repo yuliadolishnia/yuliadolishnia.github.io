@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div id="tabs">
+      <div class="tab whiteborder">border-radius</div>
+      <div class="tab">color</div>
+      <div class="tab">cursor</div>
+      <div class="tabContent">
+        <div>
+          Верхній лівий радіус:
+          <input type="range" id="rtl" min="0" max="100" value="0" oninput="generate()">
+          <input type="text" id="ttl" value="0">
+        </div>
+        <div>
+          Верхній правий радіус:
+          <input type="range" id="rtr" min="0" max="100" value="0" oninput="generate()">
+          <input type="text" id="ttr" value="0">
+        </div>
+        <div>
+          Нижний правий радіус:
+          <input type="range" id="rbr" min="0" max="100" value="0" oninput="generate()">
+          <input type="text" id="tbr" value="0">
+        </div>
+        <div>
+          Нижний лівий радіус:
+          <input type="range" id="rbl" min="0" max="100" value="0" oninput="generate()">
+          <input type="text" id="tbl" value="0">
+        </div>
+        <div class="result">
+          <div id="block"></div>
+        <label for="textarea">Code: </label>
+        <textarea name="borderradius-info" id="output" cols="35" rows="3" disabled></textarea>
+        </div>
+      </div>
+      <div class="tabContent">
+        <div id="colorSquare" onclick="changeColor()"></div>
+<input type="text" id="colorInput" placeholder="Введіть колір (наприклад, #00FF00)">
+<button onclick="changeColorManually()">Змінити колір</button>
+        </div>
+      <div class="tabContent">
+        
+    </div>
+    <script src="scripts/script.js"> </script>
+</body>
+</html>
