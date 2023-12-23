@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select name="country" id="country">
+        <option value="Ukraine">Ukraine</option>
+        <option value="Poland">Poland</option>
+        <option value="USA">USA</option>
+    </select>
+
+    <select name="cities" id="cities"></select>
+    <p id="selectedLocation"></p>
+
+    <script>
+        var countrySelect = document.getElementById('country');
+        var citiesSelect = document.getElementById('cities');
+        var selectedLocationParagraph = document.getElementById('selectedLocation');
+    
+        // Додаємо обробник події "зміни" до першого <select>
+    countrySelect.addEventListener('change', updateCities);
+
+    // Ініціалізуємо вибір країни і відповідні міста
+    updateCities();
+
+    // Додаємо обробник події "зміни" до другого <select>
+    citiesSelect.addEventListener('change', function () {
+        updateSelectedLocation();
+    });
+    
+        // Функція для оновлення міст у другому <select>
+        function updateCities() {
+            var selectedCountry = countrySelect.value;
+            citiesSelect.innerHTML = '';
+    
+            if (selectedCountry === 'Ukraine') {
+                addOption(citiesSelect, 'Kyiv');
+                addOption(citiesSelect, 'Lviv');
+                addOption(citiesSelect, 'Odesa');
+            } else if (selectedCountry === 'Poland') {
+                addOption(citiesSelect, 'Warsaw');
+                addOption(citiesSelect, 'Krakow');
+                addOption(citiesSelect, 'Wroclaw');
+            } else if (selectedCountry === 'USA') {
+                addOption(citiesSelect, 'New York');
+                addOption(citiesSelect, 'Los Angeles');
+                addOption(citiesSelect, 'Chicago');
+            }
+    
+            updateSelectedLocation();
+        }
+    
+        // Допоміжна функція для додавання опцій в <select>
+        function addOption(selectElement, optionText) {
+            var option = document.createElement('option');
+            option.value = optionText;
+            option.text = optionText;
+            selectElement.add(option);
+        }
+    
+        // Функція для оновлення виводу з обраними країною і містом
+        function updateSelectedLocation() {
+            selectedLocationParagraph.innerText = countrySelect.value + ', ' + citiesSelect.value;
+        }
+    </script>
+</body>
+</html>
